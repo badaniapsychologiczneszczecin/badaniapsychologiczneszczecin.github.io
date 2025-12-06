@@ -1,1 +1,1 @@
-# badaniapsychologiczneszczecin
+# BadaniaPsychologiczneSzczecin
