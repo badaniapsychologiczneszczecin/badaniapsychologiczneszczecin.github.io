@@ -1,0 +1,37 @@
+//<![CDATA[
+
+var   myJSArray;
+var   num_i;
+var   pos = 0;
+
+
+var   mapa;
+var x1;
+var y1;
+var   ilosc_punktow;
+
+    
+function getMapa(myString) { mapa = myString.split(","); }   
+function getX(myString) { x1 = myString.split(","); }     
+function getY(myString) { y1 = myString.split(","); }  
+  
+function getArray(myString) { myJSArray = myString.split(","); }
+
+function next()
+{
+var c = document.getElementById("bus_duzy");
+if(pos<num_i-1) pos++;
+c.src=myJSArray[pos];
+document.getElementById("ref").setAttribute("href",myJSArray[pos] );
+
+}
+function prev()
+{
+var c = document.getElementById("bus_duzy");
+if(pos>0) pos--;
+c.src=myJSArray[pos];
+document.getElementById("ref").setAttribute("href",myJSArray[pos] );
+}
+
+
+ //]]>
