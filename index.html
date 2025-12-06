@@ -18,6 +18,25 @@
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/lightbox.min.js"></script>
 	<script type="text/javascript" src="js/galeria.js"></script>
+
+    <!-- Dodane style naprawiające zachodzenie mapy na tekst -->
+    <style>
+      /* poprawa mapy - blokuje zachodzenie elementów i nadaje responsywną szerokość */
+      #mapka { clear: both; overflow: visible; padding: 12px 0; margin: 18px 0; text-align: center; }
+      #mapka img {
+        max-width: 720px; /* maksymalna szerokość obrazka mapy */
+        width: 100%;      /* dostosowuje się do szerokości kontenera */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      }
+      @media (max-width: 600px) {
+        #mapka { margin: 12px 0; }
+        #mapka img { max-width: 100%; }
+      }
+    </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127740060-1"></script>
 <script>
