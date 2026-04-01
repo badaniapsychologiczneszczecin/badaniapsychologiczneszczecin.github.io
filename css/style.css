@@ -1149,6 +1149,7 @@ p {
   }
 
   .nav-links {
+    display: none;
     position: fixed;
     top: var(--nav-height);
     left: 0;
@@ -1161,14 +1162,12 @@ p {
     padding-bottom: calc(var(--sp-xl) + env(safe-area-inset-bottom, 0px));
     background: var(--c-bg);
     gap: var(--sp-xs);
-    transform: translateX(100%);
-    transition: transform var(--duration) var(--ease-out);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
 
   .nav-links.open {
-    transform: translateX(0);
+    display: flex;
   }
 
   .nav-links a {
