@@ -1154,14 +1154,17 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 999;
     flex-direction: column;
     align-items: stretch;
     padding: var(--sp-xl);
+    padding-bottom: calc(var(--sp-xl) + env(safe-area-inset-bottom, 0px));
     background: var(--c-bg);
     gap: var(--sp-xs);
     transform: translateX(100%);
     transition: transform var(--duration) var(--ease-out);
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-links.open {
