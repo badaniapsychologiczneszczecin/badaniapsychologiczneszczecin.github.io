@@ -182,6 +182,7 @@ p {
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
+  overflow: visible;
   background: rgba(250, 248, 245, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -269,6 +270,8 @@ p {
 /* Hamburger */
 .nav-toggle {
   display: none;
+  position: relative;
+  z-index: 1001;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
@@ -1150,11 +1153,12 @@ p {
 
   .nav-links {
     display: none;
-    position: fixed;
-    top: var(--nav-height);
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: calc(100vh - var(--nav-height));
+    height: calc(100dvh - var(--nav-height));
     z-index: 999;
     flex-direction: column;
     align-items: stretch;
