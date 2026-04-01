@@ -1,124 +1,334 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
-<meta name="description" content="Pracownia badań psychologicznych – Szczecin. Nasza specjalność to opinie psychologiczne, badania psychologiczne i pomoc psychologiczna. Wykonujemy m. in. badania operatorów maszyn, kierowców, sędziów, prokuratorów, komorników czy przy pozwoleniu na broń. Wydajemy opinie psychologiczne." />
-<meta name="keywords" content="badania kierowców szczecin, badania na broń szczecin, badania psychologiczne kierowców szczecin, badania psychologiczne szczecin, opinie psychologiczne szczecin, orzecznik sądowy szczecin, pomoc psychologiczna szczecin, psychotesty szczecin" />
-<meta name="robots" content="index, follow" />
-<meta name="author" content="R_E_D_O_X@wp.pl" >
-<meta name="generator" content="Bluefish 2.2.3 on Debian 3.2.60-1+deb7u3 i686 GNU/Linux" >
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name=”robots” content=”all”>
-<META NAME="Language" CONTENT="pl">
-    <title>Opinie psychologiczne Szczecin. Pomoc psychologiczna Szczecin</title>
-    <LINK rel="stylesheet" href="css/strona.css" type="text/css">
-	<link href="css/lightbox.css" rel="stylesheet" />
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/lightbox.min.js"></script>
-	<script type="text/javascript" src="js/galeria.js"></script>
+    <meta charset=”utf-8”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>Pracownia Badań Psychologicznych Szczecin — Anna Stanowska-Karasiewicz</title>
+    <meta name=”description” content=”Pracownia Badań Psychologicznych w Szczecinie. Profesjonalne badania psychologiczne kierowców, operatorów maszyn, na broń, opinie psychologiczne, orzecznictwo sądowe i pomoc psychologiczna. Krótki czas oczekiwania. Tel. 665 736 830.”>
+    <meta name=”keywords” content=”badania psychologiczne szczecin, psychotesty szczecin, badania kierowców szczecin, badania na broń szczecin, opinie psychologiczne szczecin, pomoc psychologiczna szczecin, orzecznik sądowy szczecin, medycyna pracy szczecin, psycholog szczecin, badania psychotechniczne szczecin”>
+    <meta name=”robots” content=”index, follow, max-snippet:-1, max-image-preview:large”>
+    <meta name=”author” content=”Anna Stanowska-Karasiewicz”>
+    <link rel=”canonical” href=”https://badaniapsychologiczneszczecin.pl/”>
+    <link rel=”alternate” hreflang=”pl” href=”https://badaniapsychologiczneszczecin.pl/”>
 
-    <!-- Dodane style naprawiające zachodzenie mapy na tekst -->
-    <style>
-      /* poprawa mapy - blokuje zachodzenie elementów i nadaje responsywną szerokość */
-      #mapka { clear: both; overflow: visible; padding: 12px 0; margin: 18px 0; text-align: center; }
-      #mapka img {
-        max-width: 720px; /* maksymalna szerokość obrazka mapy */
-        width: 100%;      /* dostosowuje się do szerokości kontenera */
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        border-radius: 6px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      }
-      @media (max-width: 600px) {
-        #mapka { margin: 12px 0; }
-        #mapka img { max-width: 100%; }
-      }
-    </style>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127740060-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Geo & Local SEO -->
+    <meta name="geo.region" content="PL-32">
+    <meta name="geo.placename" content="Szczecin">
+    <meta name="geo.position" content="53.4285;14.5528">
+    <meta name="ICBM" content="53.4285, 14.5528">
 
-  gtag('config', 'UA-127740060-1');
-</script></head>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Pracownia Badań Psychologicznych Szczecin">
+    <meta property="og:title" content="Pracownia Badań Psychologicznych Szczecin — badania kierowców, na broń, opinie psychologiczne">
+    <meta property="og:description" content="Profesjonalne badania psychologiczne w Szczecinie od 2009 roku. Badania kierowców, operatorów maszyn, na broń, orzecznictwo sądowe, medycyna pracy. Tel. 665 736 830.">
+    <meta property="og:url" content="https://badaniapsychologiczneszczecin.pl/">
+    <meta property="og:image" content="https://badaniapsychologiczneszczecin.pl/img/logo2.png">
 
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
 
-<body onload=mapaStart()>
-        <div id="NAGLOWEK">
-             <center><img src="./img/logo2.png" width="70%" alt="Pracownia badań psychologicznych Szczecin"> </center>
-			 <center><a href="/" ><img src="./img/glowna.png" width="10%" alt="Pomoc psychologiczne Szczecin"></a>
-					 <a href="psychotesty.html" ><img src="./img/onas.png" width="10%" alt="Psychotesty Szczecin"></a>
-					 <a href="badania-psychologiczne.html" ><img src="./img/oferta.png" width="10%" alt="Badania psychologiczne Szczecin"></a>
-					 <a href="badania-psychologiczne-kierowcow.html" ><img src="./img/kierowcy.png" width="10%" alt="Badania psychologiczne kierowców Szczecin"></a>
-					 <a href="operatorzy.html" ><img src="./img/operatorzy.png" width="10%" alt="Operatorzy Szczecin"></a>
-					 <a href="badania-na-bron.html" ><img src="./img/bron.png" width="10%" alt="Badania na broń Szczecin"></a>
-					 <a href="medycyna.html" ><img src="./img/medycyna.png" width="10%" alt=" Medycyna pracy Szczecin"></a>
-				     <a href="kontakt.html" ><img src="./img/kontakt.png" width="10%" alt="Psycholog Szczecin"></a>
-			 </center>
-    <p class="bad">badania kierowców, operatorów maszyn, osób posiadających broń lub ubiegających się o jej posiadanie</p>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127740060-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-127740060-1');
+    </script>
+</head>
+<body>
 
-		</div>
-
-    <div id="TRESC">
-		<center>
-		<a href="./galeria/DSCF7505.jpg"  data-lightbox="img1"><img id="galeria" alt="opinie psychologiczne szczecin" src="./galeria/DSCF7505.jpg" WIDTH=16%></a>
-		<a href="./galeria/DSCF7506.jpg"  data-lightbox="img1"><img id="galeria" alt="pomoc psychologiczna szczecin" src="./galeria/DSCF7506.jpg" WIDTH=16%></a>
-		<a href="./galeria/DSCF7511.jpg"  data-lightbox="img1"><img id="galeria" alt="orzecznik sądowy szczecin" src="./galeria/DSCF7511.jpg" WIDTH=16%></a>
-        </center>
-
-	<h1>Pomoc psychologiczna Szczecin</h1>
-
-          <p class="anna" >Anna Stanowska-Karasiewicz</p>
-          <p class="adres">70-203 Szczecin, ul. 3-go Maja 25-27 <br/>(Przychodnia Kolejowa, 7 piętro, gab. 849)</p>
-          <p class="lokalizacja">Krótki okres oczekiwania na badanie, możliwość wykonania badań w godzinach popołudniowych.<br/> Dogodna lokalizacja w okolicy Bramy Portowej, PKS oraz PKP.</p>
-              <p class="tel">Telefon kontaktowy: +48 665 736 830</p>
-
-	<h2>Opinie psychologiczne Szczecin – szybko, kompleksowo, dyskretnie</h2>
-
-<p style="color: #336666; font-family: sans-serif; font-size: 14pt; text-align: justify;">Poradnia psychologiczna jest miejscem, w którym można nie tylko otrzymać fachową pomoc specjalistyczną w trudnych momentach życiowych, lecz także uzyskać profesjonalne opinie psychologiczne. Szczecin to siedziba naszej poradni umożliwiającej wykonanie badań, które w wielu przypadkach stanowią obligatoryjny etap ubiegania się o różnego typu uprawnienia zawodowe lub pozwolenia. Nasza oferta obejmuje między innymi badania psychologiczne na broń oraz badania z zakresu medycyny pracy. Jeśli zastanawiają się Państwo, gdzie udać się po stosowne opinie psychologiczne, Szczecin natomiast jest miastem, w którym poszukujecie odpowiedniego gabinetu – zapraszamy do Pracowni Badań Psychologicznych Anny Stanowskiej-Karasiewicz.</p>
-	<h2>Szybka pomoc psychologiczna Szczecin – profesjonalne konsultacje i terapie</h2>
-
-<p style="color: #336666; font-family: sans-serif; font-size: 14pt; text-align: justify;">W naszej Pracowni prowadzimy konsultacje i terapie oraz wykonujemy diagnostykę zaburzeń organicznych. Oprócz badań dla kierowców, marynarzy, detektywów i przedstawicieli innych zawodów w naszym gabinecie czeka na Państwa także standardowa pomoc psychologiczna. Szczecin jest miastem, w którym bez problemu znajdą Państwo pomoc doświadczonego psychologa zapewniającego krótki czas oczekiwania na wizytę – w naszym gabinecie czeka na Państwa fachowa pomoc psychologiczna. Szczecin, ul. 3-go Maja 25-27 (budynek Przychodni Kolejowej) – doświadczony psycholog pomoże Państwu znaleźć rozwiązanie każdego problemu i odzyskać radość z życia.</p>
-                <div id=mapka>
-                  <center><a href="https://goo.gl/maps/9gfJi5Cqcy4oX3Bc8" ><img src="./img/pracownia_google.JPG" width="80%" alt="link do google maps pracownia badań psychologicznych"></a></center>
-                </div>
-	<div id="stopka">
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Pracownia Badań Psychologicznych Szczecin",
-  "image": "http://badaniapsychologiczneszczecin.pl/img/logo2.png",
-  "url": "http://badaniapsychologiczneszczecin.pl",
-  "telephone": "+48 665 736 830",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "3-go Maja 25-27",
-    "addressLocality": "Szczecin",
-    "postalCode": "70-203",
-    "addressCountry": "PL"
-  },
-"priceRange": "$$"
-}
-</script>
-		<h3>Pracownia Badań Psychologicznych Szczecin</h3>
-		<div class="left">
-			Anna Stanowska-Karasiewicz<br />
-			70-203 Szczecin, ul. 3-go Maja 25-27<br />
-			(Przychodnia Kolejowa, 7 piętro, gab. 849)
-		</div>
-		<div class="right">
-			+48 665 736 830
-		</div>
-		<div style="clear: both;"></div>
-	</div>
+<!-- Navigation -->
+<nav class="site-nav" aria-label="Nawigacja główna">
+    <div class="container">
+        <a href="index.html" class="nav-brand">
+            <img src="img/logo2.png" alt="Pracownia Badań Psychologicznych Szczecin" width="180" height="52">
+        </a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html" class="active">Strona główna</a>
+            <a href="psychotesty.html">O nas</a>
+            <a href="badania-psychologiczne.html">Oferta</a>
+            <a href="badania-psychologiczne-kierowcow.html">Kierowcy</a>
+            <a href="operatorzy.html">Operatorzy</a>
+            <a href="badania-na-bron.html">Broń</a>
+            <a href="medycyna.html">Medycyna pracy</a>
+            <a href="kontakt.html" class="nav-cta">Kontakt</a>
         </div>
-
     </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-badge">Pracownia Badań Psychologicznych — Szczecin</span>
+            <h1>Profesjonalne <em>opinie psychologiczne</em> w Szczecinie</h1>
+            <p class="hero-text">Badania kierowców, operatorów maszyn, na broń oraz kompleksowa pomoc psychologiczna. Krótki czas oczekiwania, dogodna lokalizacja w centrum Szczecina.</p>
+            <div class="hero-actions">
+                <a href="tel:+48665736830" class="btn btn-primary">Zadzwoń: +48 665 736 830</a>
+                <a href="badania-psychologiczne.html" class="btn btn-outline">Zobacz ofertę</a>
+            </div>
+        </div>
+        <div class="hero-gallery">
+            <a class="lightbox-link" href="galeria/DSCF7505.jpg" data-caption="Gabinet konsultacyjny">
+                <picture>
+                    <source srcset="galeria/DSCF7505.webp" type="image/webp">
+                    <img src="galeria/DSCF7505.jpg" alt="Gabinet konsultacyjny pracowni badań psychologicznych w Szczecinie" loading="lazy" width="600" height="450">
+                </picture>
+            </a>
+            <a class="lightbox-link" href="galeria/DSCF7506.jpg" data-caption="Sala badań psychologicznych">
+                <picture>
+                    <source srcset="galeria/DSCF7506.webp" type="image/webp">
+                    <img src="galeria/DSCF7506.jpg" alt="Sala badań psychologicznych ze sprzętem diagnostycznym" loading="lazy" width="600" height="450">
+                </picture>
+            </a>
+            <a class="lightbox-link" href="galeria/DSCF7511.jpg" data-caption="Recepcja pracowni">
+                <picture>
+                    <source srcset="galeria/DSCF7511.webp" type="image/webp">
+                    <img src="galeria/DSCF7511.jpg" alt="Recepcja pracowni badań psychologicznych w Szczecinie" loading="lazy" width="600" height="450">
+                </picture>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="section section-alt" id="uslugi">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">Nasze usługi</span>
+            <h2>Szeroki zakres badań psychologicznych</h2>
+            <p>Od 2009 roku oferujemy profesjonalne badania psychologiczne i opinie dla kierowców, operatorów, osób ubiegających się o pozwolenie na broń oraz pomoc psychologiczną.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon">&#128663;</div>
+                <h3>Badania kierowców</h3>
+                <p>Psychotesty dla kierowców wszystkich kategorii, instruktorów, egzaminatorów oraz kierowców po utracie uprawnień. Badania do profilu PKK.</p>
+                <a href="badania-psychologiczne-kierowcow.html" class="btn btn-outline btn-sm">Szczegóły</a>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">&#9881;</div>
+                <h3>Operatorzy maszyn</h3>
+                <p>Badania operatorów wózków widłowych, dźwigów, żurawi, ciężkiego sprzętu budowlanego i osób pracujących na wysokościach.</p>
+                <a href="operatorzy.html" class="btn btn-outline btn-sm">Szczegóły</a>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">&#128737;</div>
+                <h3>Badania na broń</h3>
+                <p>Badania psychologiczne dla osób ubiegających się o pozwolenie na broń, pracowników ochrony, detektywów i pracowników wymiaru sprawiedliwości.</p>
+                <a href="badania-na-bron.html" class="btn btn-outline btn-sm">Szczegóły</a>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">&#127973;</div>
+                <h3>Medycyna pracy</h3>
+                <p>Badania psychologiczne z zakresu medycyny pracy — pojazdy służbowe, stanowiska wymagające szczególnej sprawności psychofizycznej.</p>
+                <a href="medycyna.html" class="btn btn-outline btn-sm">Szczegóły</a>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">&#9878;</div>
+                <h3>Orzecznictwo sądowe</h3>
+                <p>Biegły sądowy — opinie psychologiczne dla sądów, prokuratorów, komorników, kuratorów i sędziów. Orzecznik sądowy Szczecin.</p>
+                <a href="psychotesty.html" class="btn btn-outline btn-sm">Szczegóły</a>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">&#128156;</div>
+                <h3>Pomoc psychologiczna</h3>
+                <p>Konsultacje psychologiczne, terapia, diagnostyka zaburzeń organicznych, badania intelektu i osobowości. Psycholog Szczecin.</p>
+                <a href="badania-psychologiczne.html" class="btn btn-outline btn-sm">Szczegóły</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="section" id="o-nas">
+    <div class="container">
+        <div class="about-grid reveal">
+            <div class="about-content">
+                <span class="section-label">O pracowni</span>
+                <h2>Doświadczenie i profesjonalizm od 2009 roku</h2>
+                <p>Pracownia Badań Psychologicznych Anny Stanowskiej-Karasiewicz to miejsce, w którym uzyskacie Państwo fachową pomoc specjalistyczną — zarówno profesjonalne opinie psychologiczne, jak i wsparcie w trudnych momentach życiowych.</p>
+                <p>Nasza oferta obejmuje ponad 30 rodzajów badań psychologicznych, które w wielu przypadkach stanowią obligatoryjny etap ubiegania się o różnego typu uprawnienia zawodowe lub pozwolenia.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2009</span>
+                        <span class="stat-label">Rok założenia pracowni</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Rodzajów badań w ofercie</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <picture>
+                    <source srcset="galeria/DSCF7505.webp" type="image/webp">
+                    <img src="galeria/DSCF7505.jpg" alt="Wnętrze pracowni badań psychologicznych w Szczecinie przy ul. 3-go Maja" loading="lazy" width="600" height="450">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+    <div class="container reveal">
+        <h2>Umów się na badanie psychologiczne</h2>
+        <p>Krótki okres oczekiwania na wizytę, możliwość badań w godzinach popołudniowych. Dogodna lokalizacja w okolicy Bramy Portowej, PKS i PKP.</p>
+        <a href="tel:+48665736830" class="btn btn-primary">Zadzwoń: +48 665 736 830</a>
+    </div>
+</section>
+
+<!-- Location -->
+<section class="section" id="lokalizacja">
+    <div class="container">
+        <div class="contact-grid reveal">
+            <div class="contact-info">
+                <h2>Lokalizacja pracowni</h2>
+                <div class="contact-item">
+                    <div class="contact-icon">&#128205;</div>
+                    <div>
+                        <h3>Adres</h3>
+                        <p>ul. 3-go Maja 25-27<br>70-203 Szczecin<br>(Przychodnia Kolejowa, 7 piętro, gab. 849)</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">&#128222;</div>
+                    <div>
+                        <h3>Telefon</h3>
+                        <p><a href="tel:+48665736830">+48 665 736 830</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">&#128197;</div>
+                    <div>
+                        <h3>Godziny przyjęć</h3>
+                        <p>Poniedziałek – Piątek<br>Soboty po wcześniejszym umówieniu</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">&#128652;</div>
+                    <div>
+                        <h3>Dojazd</h3>
+                        <p>Centrum Szczecina — w okolicy Bramy Portowej, dworca PKS oraz PKP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://maps.google.com/maps?q=Pracownia+Bada%C5%84+Psychologicznych,+3-go+Maja+25-27,+70-203+Szczecin&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokalizacja Pracowni Badań Psychologicznych na mapie — ul. 3-go Maja 25-27, Szczecin"></iframe>
+                <a href="https://www.google.com/maps/dir//3-go+Maja+25-27,+70-203+Szczecin" target="_blank" rel="noopener" class="map-directions-link">Wyznacz trasę w Google Maps</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Pracownia Badań Psychologicznych</h3>
+                <p>Anna Stanowska-Karasiewicz<br>70-203 Szczecin, ul. 3-go Maja 25-27<br>(Przychodnia Kolejowa, 7 piętro, gab. 849)</p>
+            </div>
+            <div class="footer-col">
+                <h4>Usługi</h4>
+                <ul>
+                    <li><a href="badania-psychologiczne-kierowcow.html">Badania kierowców</a></li>
+                    <li><a href="operatorzy.html">Operatorzy maszyn</a></li>
+                    <li><a href="badania-na-bron.html">Badania na broń</a></li>
+                    <li><a href="medycyna.html">Medycyna pracy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Informacje</h4>
+                <ul>
+                    <li><a href="psychotesty.html">O nas</a></li>
+                    <li><a href="badania-psychologiczne.html">Pełna oferta</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2009–2026 Pracownia Badań Psychologicznych Szczecin</span>
+            <span><a href="tel:+48665736830" style="color:rgba(255,255,255,0.5)">+48 665 736 830</a></span>
+        </div>
+    </div>
+
+    <!-- Structured Data: LocalBusiness + MedicalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "@id": "https://badaniapsychologiczneszczecin.pl/#business",
+      "name": "Pracownia Badań Psychologicznych Szczecin",
+      "alternateName": "Pracownia Badań Psychologicznych Anna Stanowska-Karasiewicz",
+      "description": "Profesjonalne badania psychologiczne w Szczecinie — badania kierowców, operatorów maszyn, na broń, orzecznictwo sądowe, medycyna pracy, opinie psychologiczne i pomoc psychologiczna.",
+      "image": "https://badaniapsychologiczneszczecin.pl/img/logo2.png",
+      "url": "https://badaniapsychologiczneszczecin.pl",
+      "telephone": "+48 665 736 830",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. 3-go Maja 25-27",
+        "addressLocality": "Szczecin",
+        "postalCode": "70-203",
+        "addressRegion": "zachodniopomorskie",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.4285,
+        "longitude": 14.5528
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 53.4285,
+          "longitude": 14.5528
+        },
+        "geoRadius": "50000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Badania psychologiczne",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Badania psychologiczne kierowców"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Badania operatorów maszyn"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Badania psychologiczne na broń"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Medycyna pracy"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Orzecznictwo sądowe — biegły sądowy"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pomoc psychologiczna i terapia"}}
+        ]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Anna Stanowska-Karasiewicz",
+        "jobTitle": "Psycholog"
+      },
+      "foundingDate": "2009",
+      "knowsLanguage": "pl"
+    }
+    </script>
+</footer>
+
 </body>
 </html>

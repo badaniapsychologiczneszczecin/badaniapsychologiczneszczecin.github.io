@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://badaniapsychologiczneszczecin.pl/</loc>
-		<lastmod>2016-03-01</lastmod>
+		<loc>https://badaniapsychologiczneszczecin.pl/</loc>
+		<lastmod>2026-03-31</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://badaniapsychologiczneszczecin.pl/psychotesty.html</loc>
+		<lastmod>2026-03-31</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://badaniapsychologiczneszczecin.pl/badania-psychologiczne.html</loc>
+		<lastmod>2026-03-31</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
 	</url>
 	<url>
-		<loc>http://badaniapsychologiczneszczecin.pl/psychotesty.html</loc>
-		<lastmod>2016-03-01</lastmod>
+		<loc>https://badaniapsychologiczneszczecin.pl/badania-psychologiczne-kierowcow.html</loc>
+		<lastmod>2026-03-31</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://badaniapsychologiczneszczecin.pl/badania-psychologiczne.html</loc>
-		<lastmod>2016-02-28</lastmod>
+		<loc>https://badaniapsychologiczneszczecin.pl/operatorzy.html</loc>
+		<lastmod>2026-03-31</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://badaniapsychologiczneszczecin.pl/badania-psychologiczne-kierowcow.html</loc>
-		<lastmod>2016-02-28</lastmod>
+		<loc>https://badaniapsychologiczneszczecin.pl/badania-na-bron.html</loc>
+		<lastmod>2026-03-31</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://badaniapsychologiczneszczecin.pl/operatorzy.html</loc>
-		<lastmod>2016-02-28</lastmod>
+		<loc>https://badaniapsychologiczneszczecin.pl/medycyna.html</loc>
+		<lastmod>2026-03-31</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://badaniapsychologiczneszczecin.pl/badania-na-bron.html</loc>
-		<lastmod>2016-03-01</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://badaniapsychologiczneszczecin.pl/medycyna.html</loc>
-		<lastmod>2016-02-28</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://badaniapsychologiczneszczecin.pl/kontakt.html</loc>
-		<lastmod>2016-03-01</lastmod>
+		<loc>https://badaniapsychologiczneszczecin.pl/kontakt.html</loc>
+		<lastmod>2026-03-31</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
